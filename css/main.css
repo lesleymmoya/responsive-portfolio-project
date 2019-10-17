@@ -133,9 +133,15 @@ textarea {
 
   h3 {
     font-family: 'Barlow', sans-serif;
-    font-size: 1.17em;
+    font-size: 1.5em;
     margin: 0;
   }
+
+  h4 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2em;
+  }
+
   p {
     font-size: .875em;
     line-height: 18px;
@@ -267,6 +273,7 @@ textarea {
 
   footer .copyright h5 {
     color: #828282;
+    text-decoration: none;
   }
 
 /*Mobile Styles- Homepage*/
@@ -286,6 +293,7 @@ textarea {
     font-family: 'Amatic SC', cursive;
     font-size: 2.25em;
     color: #828282;
+    margin-left: 20px;
   }
 
   .hero-area h1 span {
@@ -301,15 +309,69 @@ textarea {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
+      margin-top: 55px;
     }
 
     .about h2 {
       color: #ff7d55;
+      text-align: center;
     }
 
     .about p {
       color: #828282;
+      margin-top: 45px;
     }
+
+    /*Portfolio*/
+
+    .portfolio h3 {
+      font-family: 'Barlow',sans-serif;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .portfolio .content-wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: column;
+      margin: 20px;
+    }
+
+    .portfolio article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
+    .portfolio article {
+      margin-top: 25px;
+    }
+
+    .portfolio figure {
+      width: 100%;
+      border: solid 2px lightgrey;
+    }
+
+    .portfolio img {
+      width: 100%;
+    }
+
+    img:hover  {
+     opacity: 0.5;
+    }
+
+   .portfolio h4, p {
+     margin-top: 15px;
+    }
+
+   .portfolio a, h4, p {
+     text-decoration: none;
+     color: #828282;
+    }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -486,6 +548,48 @@ header nav ul {
   margin: 14px 0 0 125px;
 }
 
+/*Portfolio*/
+
+
+.portfolio h3 {
+  font-family: 'Barlow',sans-serif;
+  font-size: 1.5em;
+}
+
+.portfolio .content-wrapper {
+  margin-left: 65px;
+}
+
+.portfolio article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.portfolio article {
+  margin-top: 25px;
+}
+
+.portfolio figure {
+  width: 100%;
+  border: solid 2px lightgrey;
+}
+
+ img:hover  {
+  opacity: 0.5;
+}
+
+.portfolio h4, p {
+  margin-top: 25px;
+ }
+
+.portfolio a, h4, p {
+  text-decoration: none;
+  color: #828282;
+}
+
+
 /*Footer*/
 
 footer .content-wrapper {
@@ -525,7 +629,7 @@ footer .hire-me, .social, .meet-me {
   margin: 0;
 }
 
-footer h4 p a .hire-me-header, .social-media-header, .meet-me-header {
+footer h4 p a .hire-me-header, .socialmedia-header, .meet-me-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -540,6 +644,8 @@ footer .social-icons {
 
 footer .copyright {
   width: 100%;
+  color: #828282;
+  text-decoration: none;
 }
 
 
@@ -619,7 +725,7 @@ footer .copyright {
   }
 
   .about .content-wrapper {
-    width: 50%;
+    width: 60%;
     margin: 50px 0;
   }
 
@@ -638,6 +744,36 @@ footer .copyright {
     line-height: 1.5;
   }
 
+  /*Portfolio*/
+
+  .portfolio h3 {
+    font-family: 'Barlow',sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .portfolio article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .portfolio article {
+    margin-top: 25px;
+  }
+
+  img:hover  {
+   opacity: 0.5;
+  }
+
+  .portfolio a, h4, p {
+   text-decoration: none;
+   color: #828282;
+  }
+
+
+
   /*Footer*/
 
   footer .content-wrapper {
@@ -648,6 +784,10 @@ footer .copyright {
   footer .connect-header h3 {
     width: 100%;
     margin: 0 0 25px 0;
+  }
+
+  footer h3 {
+    font-size: 2.25em;
   }
 
   footer .footer-content {
@@ -677,7 +817,7 @@ footer .copyright {
     margin: 0;
   }
 
-  footer h4 p a .hire-me-header, .social-media-header, .meet-me-header {
+  footer h4 p a .hire-me-header, .socialmedia-header, .meet-me-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -694,8 +834,10 @@ footer .copyright {
     width: 100%;
   }
 
- footer .copyright h5 {
-   font-size: 1em
+ footer .copyright h6 {
+   font-size: 1em;
+   color: #828282;
+   text-decoration: none;
  }
 
 @media only screen and (min-width: 35em) {
@@ -773,4 +915,3 @@ footer .copyright {
   h3 {
     page-break-after: avoid;
   }
-}
