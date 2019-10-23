@@ -302,7 +302,7 @@ textarea {
 
 /*About*/
 
-  .about {
+  #about {
       background: url('../img/about-me-picture-desk-2.png') center no-repeat;
       background-size: cover;
       min-height: 500px;
@@ -312,12 +312,12 @@ textarea {
       margin-top: 55px;
     }
 
-    .about h2 {
+    #about h2 {
       color: #ff7d55;
       text-align: center;
     }
 
-    .about p {
+    #about p {
       color: #828282;
       margin-top: 45px;
     }
@@ -533,32 +533,35 @@ header nav ul {
   margin: 30px 0;
 }
 
-.about .content-wrapper {
+#about .content-wrapper {
   width: 80%;
   margin: 50px 0;
 }
 
-.about h2 {
+#about h2 {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.about p {
+#about p {
   text-align: left;
   margin: 14px 0 0 125px;
 }
 
 /*Portfolio*/
-
+.portfolio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 .portfolio h3 {
   font-family: 'Barlow',sans-serif;
   font-size: 1.5em;
 }
 
-.portfolio .content-wrapper {
-  margin-left: 65px;
-}
 
 .portfolio article {
   display: flex;
@@ -602,7 +605,7 @@ footer .connect-header h3 {
   margin: 0 0 25px 0;
 }
 
-footer .footer-content {
+footer #footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -686,11 +689,12 @@ footer .copyright {
 
   header .content-wrapper {
     width: 100%;
+    display: flex;
     justify-content: space-between;
   }
 
   header figure {
-    width: 10%;
+    width: 20%;
   }
 
   header figure img {
@@ -698,10 +702,12 @@ footer .copyright {
   }
 
   header nav {
-    width: 10%;
+    width: 30%;
   }
 
   header nav ul {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
   }
 
@@ -724,27 +730,35 @@ footer .copyright {
     min-height: 900px;
   }
 
-  .about .content-wrapper {
+  #about .content-wrapper {
     width: 60%;
     margin: 50px 0;
   }
 
-  .about h2 {
+  #about h2 {
     text-align: center;
     margin-bottom: 50px;
   }
 
-  .about p {
+  #about p {
     text-align: left;
     margin: 14px 0 0 150px;
   }
 
-  .about p {
+  #about p {
     font-size: 1.25em;
     line-height: 1.5;
   }
 
   /*Portfolio*/
+
+  .portfolio  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
   .portfolio h3 {
     font-family: 'Barlow',sans-serif;
@@ -752,7 +766,12 @@ footer .copyright {
     text-align: center;
   }
 
+  .portfolio .content wrapper {
+    margin: 0;
+  }
+
   .portfolio article {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -790,7 +809,7 @@ footer .copyright {
     font-size: 2.25em;
   }
 
-  footer .footer-content {
+  footer #footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
