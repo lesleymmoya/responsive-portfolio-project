@@ -338,9 +338,10 @@ textarea {
       margin: 20px;
     }
 
-    .portfolio article {
+    .portfolio
+    .section-one, .section-two, .section-three {
       display: flex;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       flex-flow: row wrap;
     }
@@ -364,6 +365,7 @@ textarea {
 
    .portfolio h4, p {
      margin-top: 15px;
+     text-align: left;
     }
 
    .portfolio a, h4, p {
@@ -562,7 +564,6 @@ header nav ul {
   font-size: 1.5em;
 }
 
-
 .portfolio article {
   display: flex;
   justify-content: center;
@@ -650,7 +651,7 @@ footer .copyright {
   color: #828282;
   text-decoration: none;
 }
-
+}
 
 /*Desktop Styles Here*/
 @media only screen and (min-width: 1200px) {
@@ -760,13 +761,45 @@ footer .copyright {
     flex-flow: row wrap;
   }
 
+  .portfolio header {
+    justify-content: space-around;
+  }
+
+  .portfolio header .content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .portfolio header figure {
+    width: 20%;
+  }
+
+  .portfolio header figure img {
+    width: 100px;
+  }
+
+  .portfolio header nav {
+    width: 30%;
+  }
+
+  .portfolio header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .portfolio .header-divider {
+    display: none;
+  }
+
   .portfolio h3 {
     font-family: 'Barlow',sans-serif;
     font-size: 1.5em;
     text-align: center;
   }
 
-  .portfolio .content wrapper {
+  .portfolio .content-wrapper {
     margin: 0;
   }
 
@@ -858,6 +891,7 @@ footer .copyright {
    color: #828282;
    text-decoration: none;
  }
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -934,3 +968,4 @@ footer .copyright {
   h3 {
     page-break-after: avoid;
   }
+}
